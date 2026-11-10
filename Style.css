@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background-color: #F6F3EB;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    /* max-width: 50vh; */
+    width: 50%;
+    /* min-height: 75%; */
+    margin: 20px auto;
+    padding: .25rem;
+    border-radius: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.25rem;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(127, 32, 32);
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.addTask {
+    justify-content: center;
+    align-items: center;
+
+}
+
+input,
+button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+input {
+    width: 60%;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(201, 202, 172);
+    background-color: rgb(246, 243, 235);
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+}
+
+button {
+    background-color: rgb(127, 32, 32);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.status button {
+    background-color: #f6f3eb;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+
+}
+
+.status button:hover {
+    background-color: rgba(201, 202, 172, 0.1);
+    color: black;
+}
+
+.status button.selected {
+    background-color: #7F2020;
+    color: white;
+}
+
+.showTask {
+    margin-top: 10px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.taskMsg {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 50px;
+}
+
+.taskList {
+    font-size: 20px;
+    width: 100%;
+}
+
+li {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem;
+    background-color: rgba(246, 243, 235,0.5);
+    border: none;
+     color: rgb(51, 51, 51);
+}
+.taskItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.deleteBtn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    /* padding: 0.8rem 1rem; */
+    /* margin: 1px; */
+    color: gray;
+}
+li:hover{
+    background-color: rgb(246, 243, 235);
+}
+li button :hover{
+    color: red;
+
+
+}
+
+.msg {
+    border-top: 0.5px solid rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 17px;
+    width: 100%;
+
+}
+ input[type="checkbox"]{
+    accent-color: #7F2020;
+ }
+
+footer {
+    margin-top: auto;
+    padding: 0 20px;
+}
